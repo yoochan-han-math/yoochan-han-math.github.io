@@ -1,6 +1,6 @@
 :root {
-  --text: #18202a; --muted: #657080; --link: #185a9d; --line: #dfe4e9;
-  --navy: #183b5b; --green: #376b5a; --wine: #8d3f4d; --paper: #f6f8fa;
+  --text: #202a33; --muted: #66727d; --link: #344f67; --line: #dce2e7;
+  --navy: #263d51; --green: #445d72; --wine: #445d72; --paper: #f4f6f8;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 82px; }
@@ -49,7 +49,7 @@ h2::after { content: ""; width: 44px; height: 2px; background: #aab8c5; }
 h3 { margin: 0 0 3px; color: #243546; font-size: 17px; font-weight: 650; line-height: 1.38; }
 .research-list p, .publication-list p, .item-list p, .cv-grid p { margin: 0; }
 .research-list { display: grid; gap: 12px; }
-.research-list article { margin: 0; padding-left: 14px; border-left: 3px solid #91b3a7; }
+.research-list article { margin: 0; padding-left: 14px; border-left: 3px solid #a8b6c2; }
 .research-list h3 { color: var(--green); }
 .publication-list article { padding: 18px 20px; background: var(--paper); border-radius: 3px; }
 .publication-list article + article { border-top: 0; }
@@ -61,7 +61,7 @@ h3 { margin: 0 0 3px; color: #243546; font-size: 17px; font-weight: 650; line-he
 #talks h2::after { background: var(--wine); }
 #talks .item-list { display: grid; gap: 13px; }
 #talks .item-list article {
-  margin: 0; padding: 17px 20px; background: #fbf5f6; border-left: 4px solid var(--wine); border-radius: 0 3px 3px 0;
+  margin: 0; padding: 17px 20px; background: #f2f5f7; border-left: 4px solid var(--wine); border-radius: 0 3px 3px 0;
 }
 #talks h3 { font-size: 18px; }
 #travel { color: #465362; }
@@ -73,7 +73,7 @@ h3 { margin: 0 0 3px; color: #243546; font-size: 17px; font-weight: 650; line-he
 .cv-grid { display: grid; gap: 32px; }
 .cv-group h3 {
   margin-bottom: 14px; padding-bottom: 7px; color: var(--wine);
-  border-bottom: 2px solid #e6cbd0; font-family: "Source Serif 4", Georgia, serif;
+  border-bottom: 2px solid #cbd5dd; font-family: "Source Serif 4", Georgia, serif;
   font-size: 21px; font-weight: 600;
 }
 .cv-group p + p { margin-top: 6px; }
