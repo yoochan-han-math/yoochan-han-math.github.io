@@ -81,7 +81,7 @@ h3 { margin: 0 0 3px; color: #243546; font-size: 17px; font-weight: 650; line-he
 }
 #talks h3 { font-size: 17px; }
 #travel { color: #465362; }
-#travel h2 { color: #53697c; font-size: 24px; }
+#travel h2 { color: #53697c; font-size: 27px; }
 #travel .item-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 18px; }
 #travel .item-list article { margin: 0; padding: 12px 14px; background: var(--paper); border-top: 2px solid #c9d3dc; }
 #travel h3 { font-size: 15px; line-height: 1.35; }
@@ -115,6 +115,7 @@ footer p { margin: 0; }
   h2 { margin-bottom: 20px; font-size: 24px; }
   #publications h2 { font-size: 28px; }
   #talks h2 { font-size: 25px; }
+  #travel h2, #cv h2 { font-size: 25px; }
   #travel .item-list { grid-template-columns: 1fr; }
   footer { display: block; }
   footer p + p { margin-top: 4px; }
