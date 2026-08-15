@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260815-6" />
+    <link rel="stylesheet" href="styles.css?v=20260815-7" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -103,10 +103,9 @@
           </div>
         </section>
 
-        <section id="talks" aria-labelledby="talks-title">
-          <div class="section-heading">
-            <h2 id="talks-title">Talks &amp; Posters</h2>
-          </div>
+        <section class="collapsible" id="talks" aria-labelledby="talks-title">
+          <details>
+          <summary><h2 id="talks-title">Talks &amp; Posters</h2></summary>
           <div class="section-body item-list">
             <article>
               <h3><a href="https://saarc.kaist.ac.kr/">2026 SAARC Closing Workshop</a></h3>
@@ -137,12 +136,12 @@
               <p class="meta">KAIST, Daejeon, Korea · April 20, 2024</p>
             </article>
           </div>
+          </details>
         </section>
 
-        <section id="travel" aria-labelledby="travel-title">
-          <div class="section-heading">
-            <h2 id="travel-title">Travel</h2>
-          </div>
+        <section class="collapsible" id="travel" aria-labelledby="travel-title">
+          <details>
+          <summary><h2 id="travel-title">Travel</h2></summary>
           <div class="section-body item-list">
             <article>
               <h3><a href="https://fepw2026.prob.tw/">Far East Probability Workshop 2026</a></h3>
@@ -217,12 +216,12 @@
               <p>Busan, Korea · 06/21–06/23/2023</p>
             </article>
           </div>
+          </details>
         </section>
 
-        <section id="cv" aria-labelledby="cv-title">
-          <div class="section-heading">
-            <h2 id="cv-title">CV</h2>
-          </div>
+        <section class="collapsible" id="cv" aria-labelledby="cv-title">
+          <details>
+          <summary><h2 id="cv-title">CV</h2></summary>
           <div class="section-body cv-grid">
             <div class="cv-group">
               <h3>Education</h3>
@@ -254,6 +253,7 @@
               <p>Excellent Presentation Award, 2026 SAARC Closing Workshop <span class="meta">2026</span></p>
             </div>
           </div>
+          </details>
         </section>
       </div>
     </main>
@@ -283,6 +283,12 @@
         { rootMargin: "-15% 0px -70%", threshold: [0, 0.25, 0.5] }
       );
       sections.forEach((section) => observer.observe(section));
+
+      document.querySelectorAll('nav a[href="#talks"], nav a[href="#travel"], nav a[href="#cv"]').forEach((link) => {
+        link.addEventListener("click", () => {
+          document.querySelector(link.getAttribute("href"))?.querySelector("details")?.setAttribute("open", "");
+        });
+      });
     </script>
   </body>
 </html>
