@@ -28,6 +28,7 @@ nav a[aria-current="true"] { box-shadow: inset 0 -2px var(--wine); }
 .hero { display: grid; grid-template-columns: minmax(0, 1fr) 190px; gap: 42px; align-items: start; padding: 62px 0 58px; }
 h1, h2 { font-family: "Source Serif 4", Georgia, serif; }
 h1 { margin: 0 0 5px; color: var(--navy); font-size: 40px; font-weight: 600; line-height: 1.15; }
+.native-name { margin: 0 0 7px; color: #536779; font-family: "Source Serif 4", Georgia, serif; font-size: 22px; font-weight: 500; }
 .position { margin: 0 0 24px; color: var(--muted); }
 .lede { margin: 0 0 13px; color: var(--green); font-family: "Source Serif 4", Georgia, serif; font-size: 20px; font-weight: 500; }
 .hero-copy > p:not(.position, .lede) { margin: 0 0 12px; }
@@ -101,6 +102,7 @@ footer p { margin: 0; }
   .hero { grid-template-columns: 1fr; gap: 26px; padding: 42px 0 40px; }
   .profile-photo { grid-row: 1; width: 150px; height: 188px; }
   h1 { font-size: 32px; }
+  .native-name { font-size: 19px; }
   .lede { font-size: 17px; }
   section:not(.hero) { padding: 34px 0; }
   h2 { margin-bottom: 20px; font-size: 24px; }
