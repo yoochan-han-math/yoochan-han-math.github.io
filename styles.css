@@ -69,18 +69,26 @@ h3 { margin: 0 0 3px; color: #243546; font-size: 17px; font-weight: 650; line-he
 #travel .item-list article { margin: 0; padding: 12px 14px; background: var(--paper); border-top: 2px solid #c9d3dc; }
 #travel h3 { font-size: 15px; line-height: 1.35; }
 #travel p { margin-top: 4px; color: var(--muted); font-size: 14px; line-height: 1.4; }
-.cv-grid { display: grid; gap: 26px; }
-.cv-group h3 { margin-bottom: 8px; }
+.cv-grid { display: grid; gap: 32px; }
+.cv-group h3 {
+  margin-bottom: 14px; padding-bottom: 7px; color: var(--wine);
+  border-bottom: 2px solid #e6cbd0; font-family: "Source Serif 4", Georgia, serif;
+  font-size: 21px; font-weight: 600;
+}
 .cv-group p + p { margin-top: 6px; }
 .cv-entry + .cv-entry, .cv-entry + p { margin-top: 14px; }
+#cv .cv-entry, #cv .cv-group:first-child > p:last-child { padding-left: 14px; border-left: 3px solid #c6d4df; }
+#cv .cv-entry strong, #cv .cv-group:first-child > p:last-child strong { color: var(--navy); font-size: 17px; }
 footer { display: flex; justify-content: space-between; gap: 20px; padding: 28px 0 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
 footer p { margin: 0; }
 @media (max-width: 600px) {
   body { padding: 0 18px; font-size: 16px; }
   .site-header { padding-top: 12px; }
-  nav { gap: 8px 12px; }
-  .home-link { flex-basis: 100%; margin-right: 0; }
-  nav a { font-size: 14px; }
+  nav { display: grid; grid-template-columns: repeat(3, max-content); justify-content: space-between; gap: 6px 12px; }
+  .home-link { margin-right: 0; }
+  nav a { font-size: 0; }
+  nav a::after { content: attr(data-short); font-size: 12px; }
+  .home-link::after { font-family: "Source Serif 4", Georgia, serif; font-size: 14px; }
   .hero { grid-template-columns: 1fr; gap: 26px; padding: 42px 0 40px; }
   .profile-photo { grid-row: 1; width: 150px; height: 188px; }
   h1 { font-size: 32px; }
