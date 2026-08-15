@@ -24,6 +24,7 @@ nav a:visited { color: #536170; }
 nav a:hover, nav a[aria-current="true"] { color: var(--wine); }
 nav a[aria-current="true"] { box-shadow: inset 0 -2px var(--wine); }
 .home-link, .home-link:visited { margin-right: auto; color: var(--navy); font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: 18px; }
+.nav-mobile { display: none; }
 .hero { display: grid; grid-template-columns: minmax(0, 1fr) 190px; gap: 42px; align-items: start; padding: 62px 0 58px; }
 h1, h2 { font-family: "Source Serif 4", Georgia, serif; }
 h1 { margin: 0 0 5px; color: var(--navy); font-size: 40px; font-weight: 600; line-height: 1.15; }
@@ -85,10 +86,10 @@ footer p { margin: 0; }
   body { padding: 0 18px; font-size: 16px; }
   .site-header { padding-top: 12px; }
   nav { display: grid; grid-template-columns: repeat(3, max-content); justify-content: space-between; gap: 6px 12px; }
-  .home-link { margin-right: 0; }
-  nav a { font-size: 0; }
-  nav a::after { content: attr(data-short); font-size: 12px; }
-  .home-link::after { font-family: "Source Serif 4", Georgia, serif; font-size: 14px; }
+  .home-link { margin-right: 0; font-size: 14px; }
+  nav a { font-size: 12px; }
+  .nav-full { display: none; }
+  .nav-mobile { display: inline; }
   .hero { grid-template-columns: 1fr; gap: 26px; padding: 42px 0 40px; }
   .profile-photo { grid-row: 1; width: 150px; height: 188px; }
   h1 { font-size: 32px; }
