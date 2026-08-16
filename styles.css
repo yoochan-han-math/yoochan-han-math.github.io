@@ -98,6 +98,9 @@ h3 { margin: 0 0 3px; color: #243546; font-size: 17px; font-weight: 650; line-he
 #cv .cv-entry strong { color: var(--navy); font-size: 17px; }
 .cv-degree-line { display: flex; align-items: baseline; justify-content: space-between; gap: 18px; }
 .cv-degree-line .meta { flex: 0 0 auto; }
+.cv-row { display: flex; align-items: baseline; justify-content: space-between; gap: 22px; }
+.cv-row > span:first-child { min-width: 0; }
+.cv-row .meta { flex: 0 0 auto; text-align: right; }
 .cv-institution { color: #4f5e6b; }
 .cv-thesis { color: var(--muted); font-size: 15px; line-height: 1.45; }
 .cv-thesis span { color: var(--text); font-style: normal; font-weight: 600; }
