@@ -94,8 +94,13 @@ h3 { margin: 0 0 3px; color: #243546; font-size: 17px; font-weight: 650; line-he
 }
 .cv-group p + p { margin-top: 6px; }
 .cv-entry + .cv-entry, .cv-entry + p { margin-top: 14px; }
-#cv .cv-entry, #cv .cv-group:first-child > p:last-child { padding-left: 14px; border-left: 3px solid #c6d4df; }
-#cv .cv-entry strong, #cv .cv-group:first-child > p:last-child strong { color: var(--navy); font-size: 17px; }
+#cv .cv-entry { padding-left: 14px; border-left: 3px solid #c6d4df; }
+#cv .cv-entry strong { color: var(--navy); font-size: 17px; }
+.cv-degree-line { display: flex; align-items: baseline; justify-content: space-between; gap: 18px; }
+.cv-degree-line .meta { flex: 0 0 auto; }
+.cv-institution { color: #4f5e6b; }
+.cv-thesis { color: var(--muted); font-size: 15px; line-height: 1.45; }
+.cv-thesis span { color: var(--text); font-style: normal; font-weight: 600; }
 footer { display: flex; justify-content: space-between; gap: 20px; padding: 28px 0 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
 footer p { margin: 0; }
 @media (max-width: 600px) {
